@@ -1,17 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { ShowQuestion } from "./quizApp";
 
 function FrontPage() {
   return null;
-}
-
-function ShowQuestion() {
-  return (
-    <div>
-      <h1>Your Question</h1>
-    </div>
-  );
 }
 
 function ShowAnswer() {
