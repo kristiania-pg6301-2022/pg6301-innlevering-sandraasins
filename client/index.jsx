@@ -8,7 +8,11 @@ function FrontPage() {
 }
 
 function ShowAnswer() {
-  return null;
+  return (
+    <div>
+      <h1>Your answer is</h1>
+    </div>
+  );
 }
 
 function QuizApplication() {
