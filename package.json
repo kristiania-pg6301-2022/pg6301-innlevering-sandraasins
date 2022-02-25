@@ -1,7 +1,7 @@
 {
   "name": "pg6301-innlevering-sandraasins",
   "version": "1.0.0",
-  "description": "Denne innleveringen er anbefalt, men ikke påkrevd for å ta eksamen (PG6301 har ingen obligatoriske øvelser)",
+  "description": "React og Express på Heroku",
   "main": "index.js",
   "scripts": {
     "dev": "concurrently npm:dev:client npm:dev:server",
