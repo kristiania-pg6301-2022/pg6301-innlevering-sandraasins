@@ -3,6 +3,14 @@ import ReactDOM from "react-dom";
 
 import { ShowQuestion } from "../quizApp";
 
+function ShowAnswer() {
+  return (
+    <div>
+      <h1>Your answer is:</h1>
+    </div>
+  );
+}
+
 describe("Quiz", () => {
   it("shows random question", () => {
     const element = document.createElement("div");
