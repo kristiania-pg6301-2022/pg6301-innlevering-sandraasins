@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { randomQuestion } from "../questions";
 
+export const QuestionContext = React.createContext({ randomQuestion });
+
 function FrontPage() {
   return (
     <div>
@@ -22,7 +24,9 @@ export function ShowQuestion() {
       {Object.keys(question.answers)
         .filter((a) => question.answers[a])
         .map((a) => (
-          <div key={a}></div>
+          <div key={a}>
+            <button>{question.answers[a]}</button>
+          </div>
         ))}
     </div>
   );
