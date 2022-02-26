@@ -16,7 +16,8 @@
     "pre-commit": "npm run prettier:check",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json}\"",
     "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,html,json}\"",
-    "prettier:check": "prettier --check \"**/*.{js,jsx,ts,tsx}\""
+    "prettier:check": "prettier --check \"**/*.{js,jsx,ts,tsx}\"",
+    "verify": "cd client && npm run build && npm run test -- --collectCoverage\""
   },
   "repository": {
     "type": "git",
