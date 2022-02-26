@@ -3,10 +3,10 @@ export function randomQuestion() {
 }
 
 export function isCorrectAnswer(question, answer) {
-  return question.correct_answer[answer + "_correct"] === "true";
+  return question.correct_answers[answer + "_correct"] === "true";
 }
 
-const Questions = [
+export const Questions = [
   {
     id: 667,
     question: "Choose the odd one out.",
@@ -28,9 +28,8 @@ const Questions = [
       answer_e_correct: "false",
       answer_f_correct: "false",
     },
-    correct_answer: "answer_a",
-    explanation:
-      "Kernel is the core part of the OS and is odd one the rest are popular shells.",
+
+    explanation: null,
     tip: null,
     tags: [{ name: "BASH" }],
     category: "Linux",
@@ -58,7 +57,7 @@ const Questions = [
       answer_e_correct: "false",
       answer_f_correct: "false",
     },
-    correct_answer: null,
+
     explanation: null,
     tip: null,
     tags: [{ name: "BASH" }, { name: "Linux" }],
@@ -91,7 +90,7 @@ const Questions = [
       answer_e_correct: "false",
       answer_f_correct: "false",
     },
-    correct_answer: "answer_a",
+
     explanation: null,
     tip: null,
     tags: [{ name: "BASH" }],
@@ -119,7 +118,7 @@ const Questions = [
       answer_e_correct: "false",
       answer_f_correct: "false",
     },
-    correct_answer: "answer_a",
+
     explanation: null,
     tip: null,
     tags: [{ name: "Kubernetes" }],
@@ -147,7 +146,7 @@ const Questions = [
       answer_e_correct: "false",
       answer_f_correct: "false",
     },
-    correct_answer: "answer_a",
+
     explanation: null,
     tip: null,
     tags: [{ name: "BASH" }],
@@ -176,7 +175,7 @@ const Questions = [
       answer_e_correct: "false",
       answer_f_correct: "false",
     },
-    correct_answer: null,
+
     explanation: null,
     tip: null,
     tags: [{ name: "Linux" }],
@@ -204,7 +203,7 @@ const Questions = [
       answer_e_correct: "false",
       answer_f_correct: "false",
     },
-    correct_answer: "answer_d",
+
     explanation: null,
     tip: null,
     tags: [{ name: "Linux" }],
@@ -232,7 +231,7 @@ const Questions = [
       answer_e_correct: "false",
       answer_f_correct: "false",
     },
-    correct_answer: null,
+
     explanation: null,
     tip: null,
     tags: [{ name: "Linux" }],
@@ -260,7 +259,7 @@ const Questions = [
       answer_e_correct: "false",
       answer_f_correct: "false",
     },
-    correct_answer: null,
+
     explanation: null,
     tip: null,
     tags: [{ name: "BASH" }],
@@ -289,7 +288,6 @@ const Questions = [
       answer_e_correct: "false",
       answer_f_correct: "false",
     },
-    correct_answer: "answer_a",
     explanation: null,
     tip: null,
     tags: [{ name: "BASH" }],
