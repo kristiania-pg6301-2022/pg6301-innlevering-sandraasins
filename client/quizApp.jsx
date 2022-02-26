@@ -7,3 +7,11 @@ export function ShowQuestion() {
     </div>
   );
 }
+
+export function ShowAnswer() {
+  return (
+    <div>
+      <h1>Your answer is:</h1>
+    </div>
+  );
+}

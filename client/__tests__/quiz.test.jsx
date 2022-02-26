@@ -1,15 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import { ShowQuestion } from "../quizApp";
-
-function ShowAnswer() {
-  return (
-    <div>
-      <h1>Your answer is:</h1>
-    </div>
-  );
-}
+import { ShowAnswer, ShowQuestion } from "../quizApp";
 
 describe("Quiz", () => {
   it("shows random question", () => {
