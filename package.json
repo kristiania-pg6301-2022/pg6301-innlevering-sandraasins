@@ -11,7 +11,7 @@
     "build": "npm run build:server && npm run build:client",
     "build:client": "cd client && npm run build",
     "build:server": "cd server && npm run build",
-    "test": "jest",
+    "test": "cd client && npm run verify",
     "prepare": "husky install",
     "pre-commit": "npm run prettier:check",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json}\"",
