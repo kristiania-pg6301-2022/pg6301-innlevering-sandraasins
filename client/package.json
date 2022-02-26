@@ -8,7 +8,7 @@
     "test": "jest",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json}\"",
     "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,html,json}\"",
-    "verify": "npm run format:check && jest --collectCoverage"
+    "verify": "jest --collectCoverage"
   },
   "keywords": [],
   "author": "",
