@@ -10,7 +10,7 @@ function FrontPage() {
 function ShowAnswer() {
   return (
     <div>
-      <h1>Your answer is</h1>
+      <h1>Your answer is:</h1>
     </div>
   );
 }
