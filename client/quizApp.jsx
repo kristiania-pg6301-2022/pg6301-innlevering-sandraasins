@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import { randomQuestion } from "../questions";
+import { randomQuestion } from "../server/questions";
 
 export const QuestionContext = React.createContext({ randomQuestion });
 
