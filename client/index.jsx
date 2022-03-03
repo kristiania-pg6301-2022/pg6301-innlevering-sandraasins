@@ -3,4 +3,9 @@ import ReactDOM from "react-dom";
 import { Quiz } from "./quizApp";
 import { BrowserRouter } from "react-router-dom";
 
-ReactDOM.render(<Quiz />, document.getElementById("app"));
+ReactDOM.render(
+  <BrowserRouter>
+    <Quiz />
+  </BrowserRouter>,
+  document.getElementById("app")
+);

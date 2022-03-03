@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "parcel serve index.html",
     "build": "npm install --include=dev && parcel build index.html",
-    "test": "jest",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json}\"",
     "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,html,json}\"",
     "verify": "jest --collectCoverage"
@@ -16,7 +16,9 @@
   "devDependencies": {
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
+    "@parcel/transformer-react-refresh-wrap": "^2.3.2",
     "babel-jest": "^27.5.1",
+    "babel-jest-glob-transform": "^1.0.2",
     "jest": "^27.5.1",
     "parcel": "^2.3.2",
     "prettier": "^2.5.1"
@@ -31,7 +33,9 @@
     "collectCoverageFrom": [
       "*.{jsx,js,json}",
       "!coverag/**",
-      "!dist/**"
+      "!dist/**",
+      "!babel.config,js",
+      "!index.jsx"
     ]
   },
   "babel": {
