@@ -1,8 +1,8 @@
 import React, { useContext, useState } from "react";
 import { Routes, Route, Link } from "react-router-dom";
-import { isCorrectAnswer, randomQuestion } from "../server/questions";
+import { isCorrectAnswer, randomQuestion } from "../server/questions.js";
 
-const QuestionContext = React.createContext({ randomQuestion });
+export const QuestionContext = React.createContext({ randomQuestion });
 
 export function FrontPage() {
   return (
@@ -42,7 +42,7 @@ export function ShowQuestion() {
       {Object.keys(question.answers)
         .filter((a) => question.answers[a])
         .map((a) => (
-          <div key={a}>
+          <div key={a} data-testid={a}>
             <button onClick={() => handleSubmit(a)}>
               {question.answers[a]}
             </button>
@@ -57,8 +57,8 @@ export function ShowQuestion() {
 }
 
 export function Quiz() {
-  const [question, setQuestion] = useState(randomQuestion());
-  const [answer, setAnswer] = useState("");
+  const question = useState(randomQuestion());
+  const setAnswer = useState("");
 
   return (
     <Routes>

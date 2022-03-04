@@ -3,7 +3,7 @@ export function randomQuestion() {
 }
 
 export function isCorrectAnswer(question, answer) {
-  return question.correct_answer[answer + "_correct"] === "true";
+  return question.correct_answers[answer + "_correct"] === "true";
 }
 
 export const Questions = [
