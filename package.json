@@ -18,7 +18,7 @@
     "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,html,json}\"",
     "prettier:check": "prettier --check \"**/*.{js,jsx,ts,tsx}\"",
     "verify": "concurrently npm:verify:test",
-    "verify:test": "cd client && npm run build && npm ci && npm run verify && npm run lint"
+    "verify:test": "cd client && npm run build && npm ci && npm run verify"
   },
   "repository": {
     "type": "git",
