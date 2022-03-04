@@ -1,11 +1,17 @@
 import * as React from "react";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import { isCorrectAnswer, randomQuestion } from "../server/questions";
 
 export const QuestionContext = React.createContext({ randomQuestion });
 
 export function FrontPage() {
+  const [question, setQuestion] = useState();
+  useEffect(async () => {
+    const res = await fetch("/api/question");
+    setQuestion(await res.json());
+  }, []);
+
   return (
     <div>
       <h1>Quiz</h1>

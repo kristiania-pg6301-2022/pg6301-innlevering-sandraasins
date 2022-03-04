@@ -1,0 +1,6 @@
+GET{{server}}/api/question
+
+###
+POST{{server}}/api/question
+
+
