@@ -2,15 +2,15 @@ import express from "express";
 import * as path from "path";
 import {
   isCorrectAnswer,
-  Questions,
   randomQuestion,
-} from "../public/questions";
+  Questions,
+} from "../server/questions.js";
 
 const app = express();
 
 //GET - Returns question with: id, category, questions, answers
 app.get("/api/question", (req, res) => {
-  const { id, category, question, answer } = randomQuestion();
+  const { id, category, question, answers } = randomQuestion();
   res.json({ id, category, question, answers });
 });
 
@@ -18,6 +18,9 @@ app.get("/api/question", (req, res) => {
 app.post("/api/question", (req, res) => {
   const { id, answer } = req.body;
   const question = Questions.find((q) => q.id === id);
+  if (!question) {
+    return res.sendStatus(404);
+  }
   if (isCorrectAnswer({ question, answer })) {
     return res.json({ result: "true" });
   } else {

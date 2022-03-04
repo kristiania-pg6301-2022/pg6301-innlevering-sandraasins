@@ -6,7 +6,7 @@ export function isCorrectAnswer(question, answer) {
   return question.correct_answer[answer + "_correct"] === "true";
 }
 
-const Questions = [
+export const Questions = [
   {
     id: 667,
     question: "Choose the odd one out.",
