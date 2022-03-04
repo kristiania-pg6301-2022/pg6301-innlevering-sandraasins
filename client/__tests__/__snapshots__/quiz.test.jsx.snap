@@ -1,5 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Quiz shows answer 1`] = `"<div><h1>Your answer is:</h1></div>"`;
+exports[`Quiz shows answer 1`] = `"<h1>Your random question:</h1><h2>Is Jest fun?</h2><div data-testid=\\"answer_a\\"><button>Yes</button></div><div data-testid=\\"answer_b\\"><button>No</button></div><div data-testid=\\"answer_c\\"><button>Hell no</button></div><div><h3>Your answer is:</h3><h4>Incorrect</h4></div>"`;
 
-exports[`Quiz shows random question 1`] = `"<div><h1>Your question</h1></div>"`;
+exports[`Quiz shows random question 1`] = `"<h1>Your random question:</h1><h2>Is Jest fun?</h2><div data-testid=\\"answer_a\\"><button>Yes</button></div><div data-testid=\\"answer_b\\"><button>No</button></div><div data-testid=\\"answer_c\\"><button>Hell no</button></div><div><h3>Your answer is:</h3><h4></h4></div>"`;
